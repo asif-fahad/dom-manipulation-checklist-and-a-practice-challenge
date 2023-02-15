@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation checklist and a practice challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl font-medium text-center">DOM manipulation checklist and a practice challenge</h1>
+    </header>
+    <main>
+        <!-- practice-one start-->
+        <section>
+
+        </section>
+        <!-- practice-one end -->
+
+        <!-- practice-two start -->
+        <section class="bg-blue-100 w-9/12 mx-auto mt-12 p-8">
+            <div class="flex flex-col items-center">
+                <h1 class="text-3xl">Price: <span id="price-field">1000</span></h1>
+                <button id="btn-apply" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg">Apply</button>
+                <h1>Hit Apply Button for 30% Off!!</h1>
+            </div>
+        </section>
+        <!-- practice-two end -->
+
+        <!-- practice-three start -->
+        <section class="bg-red-100 w-9/12 mx-auto mt-12 p-8">
+            <div class="flex flex-col items-center">
+                <h1 class="text-3xl">Price: <span id="price-field-2">1000</span></h1>
+                <input id="p-3-input" class="my-3" type="text" placeholder="type DISC30">
+                <button id="btn-apply-2" class="bg-amber-600 hover:bg-sky-700 px-8 py-2 text-white font-medium rounded-lg" disabled>Apply</button>
+                <h1>Write "DISC30" and Hit Apply Button for 30% Off!!</h1>
+            </div>
+        </section>
+        <!-- practice-three end -->
+
+        <!-- practice-four start -->
+        <section class="container bg-yellow-100 w-9/12 mx-auto mt-12 p-8">
+            <h1 class="shadow-sm">TEXT EDITOR</h1>
+        <div class="flex-box">
+            <div class="row">
+                <div class="col">
+                    <!-- Adding different buttons for
+                         different functionality-->
+                    <!--onclick attribute is added to give 
+                        button a work to do when it is clicked-->
+                    <button type="button" 
+                            onclick="f1()" 
+                            class=" shadow-sm btn btn-outline-secondary" 
+                            data-toggle="tooltip"
+                            data-placement="top" 
+                            title="Bold Text">
+            Bold</button>
+                    <button type="button" 
+                            onclick="f2()" 
+                            class="shadow-sm btn btn-outline-success" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Italic Text">
+            Italic</button>
+                    <button type="button" 
+                            onclick="f3()" 
+                            class=" shadow-sm btn btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top"
+                            title="Left Align">
+            <i class="fas fa-align-left"></i></button>
+                    <button type="button" 
+                            onclick="f4()" 
+                            class="btn shadow-sm btn-outline-secondary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Center Align">
+            <i class="fas fa-align-center"></i></button>
+                    <button type="button" 
+                            onclick="f5()" 
+                            class="btn shadow-sm btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Right Align">
+            <i class="fas fa-align-right"></i></button>
+                    <button type="button" 
+                            onclick="f6()" 
+                            class="btn shadow-sm btn-outline-secondary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Uppercase Text">
+            Upper Case</button>
+                    <button type="button" 
+                            onclick="f7()" 
+                            class="btn shadow-sm btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Lowercase Text">
+            Lower Case</button>
+                    <button type="button" 
+                            onclick="f8()" 
+                            class="btn shadow-sm btn-outline-primary" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Capitalize Text">
+            Capitalize</button>
+                    <button type="button" 
+                            onclick="f9()" 
+                            class="btn shadow-sm btn-outline-primary side" 
+                            data-toggle="tooltip" 
+                            data-placement="top" 
+                            title="Tooltip on top">
+            Clear Text</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+            </div>
+            <div class="col-md-6 col-sm-9">
+                <div class="flex-box">
+                    <textarea id="textarea1" 
+                              class="input shadow" 
+                              name="name" 
+                              rows="15" 
+                              cols="100" 
+                              placeholder="Your text here ">
+                    </textarea>
+                </div>
+            </div>
+            <div class="col-md-3">
+            </div>
+        </div>
+        </section>
+        <!-- practice-four end -->
+    </main>
+
+    <!-- js -->
+    <script src="js/practice-one.js"></script>
+    <script src="js/practice-two.js"></script>
+    <script src="js/practice-three.js"></script>
+    <script src="js/practice-four.js"></script>
+</body>
+</html>
